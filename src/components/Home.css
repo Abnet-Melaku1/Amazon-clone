@@ -1,0 +1,41 @@
+.home_img {
+  width: 100%;
+  position: relative;
+  margin-bottom: -300px;
+}
+.backward_icon {
+  color: rgb(19, 25, 33);
+  font-size: 50px;
+  font-weight: 100;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 10px;
+  top: 30%;
+}
+.forward_icon {
+  color: rgb(19, 25, 33);
+  font-size: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: 30%;
+}
+
+.product_details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+}
+.cart__icon {
+  position: relative;
+}
+.numberofitems {
+  position: absolute;
+  top: -22px;
+  right: 25px;
+}
