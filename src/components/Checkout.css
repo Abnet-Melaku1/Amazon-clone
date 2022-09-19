@@ -1,0 +1,31 @@
+.checkout__page {
+  min-height: 100vh;
+  background-color: #eaeded;
+}
+.checkout__ad {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.checkout {
+  display: flex;
+  gap: 15px;
+}
+
+.empty__cart {
+  width: 100%;
+}
+.checkout__left {
+  flex: 0.8;
+}
+.checkout__right {
+  flex: 0.2;
+}
+.checkout__title {
+  background-color: white;
+  width: 100%;
+  padding-block: 15px;
+  margin: 0;
+}
+.checkout__page {
+  padding-inline: 35px;
+}

@@ -31,11 +31,3 @@
   justify-content: space-around;
   gap: 15px;
 }
-.cart__icon {
-  position: relative;
-}
-.numberofitems {
-  position: absolute;
-  top: -22px;
-  right: 25px;
-}
