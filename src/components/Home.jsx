@@ -41,7 +41,7 @@ function Home() {
       <div className="product_details">
         {datas.map((data) => (
           <Product
-            key={data.id}
+            id={data.id}
             img={data.image}
             price={data.price}
             rating={data.rating}

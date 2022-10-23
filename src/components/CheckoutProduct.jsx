@@ -34,9 +34,12 @@ function CheckoutProduct(props) {
                 initialValue={props.rating}
                 /* Available Props */ className="rating"
               />
-              <button onClick={removeFromBasket} className="remove__button">
-                Remove from basket
-              </button>
+              {props.hideButton !=
+              (
+                <button onClick={removeFromBasket} className="remove__button">
+                  Remove from basket
+                </button>
+              )}
             </div>
           </div>
         </div>

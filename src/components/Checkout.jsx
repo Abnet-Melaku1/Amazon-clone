@@ -5,8 +5,9 @@ import Product from "./Product";
 import { useStateValue } from "../contexts/StateProvider";
 import CheckoutProduct from "./CheckoutProduct";
 import Emptycart from "./Emptycart";
-function Checkout() {
-  const [{ basket }, dispatch] = useStateValue();
+function Checkout(props) {
+  const [{ basket, user }, dispatch] = useStateValue();
+
   return (
     <div className="checkout__page">
       <div>
@@ -15,7 +16,9 @@ function Checkout() {
           src="https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg"
           alt=""
         />
-        <h3 className="checkout__welcome">Hello Abnet</h3>
+        <h3 className="checkout__welcome">
+          Hello ,{user ? user.email : "Guest"}
+        </h3>
       </div>
       <div className="checkout">
         {basket.length == 0 && (
@@ -33,6 +36,7 @@ function Checkout() {
                 img={bas.image}
                 price={bas.price}
                 rating={bas.rating}
+                id={bas.id}
               />
             ))}
           </div>

@@ -7,6 +7,7 @@ function Product(props) {
   const [{ basket }, dispatch] = useStateValue();
 
   function addToBasket() {
+    console.log(props.id);
     dispatch({
       type: "ADD_TO_BASKET",
       item: {
@@ -27,6 +28,7 @@ function Product(props) {
           <p className="product_price">
             <small>$</small>
             <strong> {props.price}</strong>
+            <small>{props.key}</small>
           </p>
           <Rating
             size={18}

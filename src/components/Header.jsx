@@ -38,7 +38,7 @@ function Header() {
           <SearchIcon />
         </div>
       </div>
-      <Link to={user ? "" : "/login"}>
+      <Link to={user ? "" : "/login"} className="signup__link">
         <div className="options" onClick={signout}>
           <p>
             Hello,{user ? user.email : "Guest"}
@@ -47,12 +47,14 @@ function Header() {
           </p>
         </div>
       </Link>
-      <div className="returnsandorder">
-        <p>
-          Returns <br />
-          <strong>& Orders</strong>
-        </p>
-      </div>
+      <Link to="/orders" className="return__link">
+        <div className="returnsandorder">
+          <p>
+            Returns <br />
+            <strong>& Orders</strong>
+          </p>
+        </div>
+      </Link>
       <Link to="/checkout" className="cart__link">
         <div className="cart_icon">
           <p className="numberofitems">{basket.length}</p>

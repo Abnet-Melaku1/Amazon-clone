@@ -4,6 +4,10 @@
   margin: 0 20px;
   margin-top: 18px;
 }
+.return__link,
+.signup__link {
+  text-decoration: none;
+}
 .header {
   height: 60px;
   display: flex;
@@ -42,6 +46,7 @@
   border-bottom-right-radius: 5px;
   background-color: rgb(254, 189, 105);
 }
+
 .returnsandorder p {
   color: white;
 }
@@ -73,5 +78,6 @@
   position: absolute;
   top: -22px;
   right: 25px;
-  color: white;
+  color: #dc7e07;
+  font-weight: 700;
 }

@@ -51,3 +51,11 @@
   color: #0F1111!;
   font-weight: 400;
 }
+.remove__button {
+  background-color: #febd69;
+  padding-inline: 15px;
+  padding-block: 3px;
+  border: 0.3px solid #d49038;
+  cursor: pointer;
+  border-radius: 3px;
+}
