@@ -2,7 +2,7 @@ import axios from "axios";
 
 const instance = axios.create({
   // THE API (cloud function) URL
-  baseURL: "https://amazon-backend-api-production.up.railway.app/",
+  baseURL: "https://wild-red-caterpillar-tie.cyclic.app/",
 });
 
 export default instance;
